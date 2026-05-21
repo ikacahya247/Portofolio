@@ -904,3 +904,218 @@ h3 {
   font-size:0.9rem;
   margin-bottom:8px;
 }
+
+/* =========================
+   PROJECT SECTION
+========================= */
+
+.project-grid{
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+  gap:32px;
+
+  margin-top:50px;
+
+}
+
+/* CARD */
+
+.project-card{
+
+  background:
+    linear-gradient(
+      145deg,
+      #0f274d,
+      #173b74
+    );
+
+  border-radius:30px;
+
+  overflow:hidden;
+
+  padding:24px;
+
+  position:relative;
+
+  transition:0.4s ease;
+
+  box-shadow:
+    0 15px 35px rgba(0,0,0,0.15);
+
+}
+
+/* HOVER */
+
+.project-card:hover{
+
+  transform:
+    translateY(-10px);
+
+  box-shadow:
+    0 25px 50px rgba(0,0,0,0.25),
+    0 0 25px rgba(58,134,255,0.25);
+
+}
+
+/* IMAGE WRAPPER */
+
+.project-image-wrapper{
+
+  overflow:hidden;
+
+  border-radius:24px;
+
+  margin-bottom:24px;
+
+}
+
+/* IMAGE */
+
+.project-image{
+
+  width:100%;
+
+  height:160px;
+
+  object-fit:cover;
+
+  transition:0.5s ease;
+
+  display:block;
+
+}
+
+/* ZOOM */
+
+.project-card:hover .project-image{
+
+  transform:scale(1.05);
+
+}
+
+/* META */
+
+.project-meta{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:10px;
+
+  margin-bottom:18px;
+
+}
+
+/* TAG */
+
+.project-meta span{
+
+  background:
+    rgba(255,255,255,0.10);
+
+  border:
+    1px solid rgba(255,255,255,0.10);
+
+  color:#e7f0ff;
+
+  padding:10px 16px;
+
+  border-radius:999px;
+
+  font-size:0.8rem;
+
+  font-weight:700;
+
+  letter-spacing:0.04em;
+
+}
+
+/* TITLE */
+
+.project-card h3{
+
+  color:white;
+
+  font-size:1.8rem;
+
+  line-height:1.4;
+
+  margin-bottom:16px;
+
+}
+
+/* DESC */
+
+.project-card p{
+
+  color:#d8e6ff;
+
+  line-height:1.9;
+
+  margin-bottom:24px;
+
+  font-size:1rem;
+
+}
+
+/* BUTTON */
+
+.project-link{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  width:100%;
+
+  padding:14px;
+
+  border-radius:16px;
+
+  text-decoration:none;
+
+  font-weight:700;
+
+  color:white;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2f6bff,
+      #5ea8ff
+    );
+
+  transition:0.3s ease;
+
+}
+
+/* BUTTON HOVER */
+
+.project-link:hover{
+
+  transform:translateY(-3px);
+
+  box-shadow:
+    0 12px 25px rgba(94,168,255,0.35);
+
+}
+
+/* SECTION BG */
+
+#project{
+
+  background:
+    linear-gradient(
+      180deg,
+      #eef4ff,
+      #dfe9ff
+    );
+
+}

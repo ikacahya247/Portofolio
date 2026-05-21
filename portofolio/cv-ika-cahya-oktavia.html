@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV Ika Cahya Oktavia</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#f4f7fb;
+      font-family:"Segoe UI", Arial, sans-serif;
+      color:#10213d;
+      line-height:1.7;
+      padding:40px 20px;
+    }
+
+    .container{
+      max-width:900px;
+      margin:auto;
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    /* HEADER */
+
+    .header{
+      background:linear-gradient(135deg,#0f2b5b,#114b91);
+      color:white;
+      padding:40px;
+      display:flex;
+      align-items:center;
+      gap:30px;
+      flex-wrap:wrap;
+    }
+
+    .profile-img img{
+      width:140px;
+      height:140px;
+      object-fit:cover;
+      border-radius:50%;
+      border:5px solid rgba(255,255,255,0.3);
+    }
+
+    .header-text h1{
+      font-size:2.3rem;
+      margin-bottom:8px;
+    }
+
+    .header-text p{
+      opacity:0.9;
+      font-size:1rem;
+    }
+
+    .contact{
+      margin-top:15px;
+    }
+
+    .contact p{
+      margin-bottom:5px;
+      font-size:0.95rem;
+    }
+
+    /* CONTENT */
+
+    .content{
+      padding:40px;
+    }
+
+    h2{
+      color:#114b91;
+      margin-bottom:15px;
+      margin-top:35px;
+      font-size:1rem;
+      text-transform:uppercase;
+      border-bottom:2px solid #d9e4f5;
+      padding-bottom:8px;
+      letter-spacing:1px;
+    }
+
+    .profile-text{
+      color:#3f4d63;
+    }
+
+    /* EDUCATION */
+
+    .edu-item{
+      margin-bottom:18px;
+    }
+
+    .edu-item h3{
+      font-size:1rem;
+      color:#07172f;
+    }
+
+    .edu-item span{
+      color:#61708a;
+      font-size:0.9rem;
+    }
+
+    /* SKILLS */
+
+    .skill-list{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .skill-list span{
+      background:#e7f0ff;
+      color:#114b91;
+      padding:10px 16px;
+      border-radius:30px;
+      font-size:0.9rem;
+      font-weight:600;
+    }
+
+    /* PROJECT */
+
+    .project{
+      background:#f8fbff;
+      padding:20px;
+      border-radius:14px;
+      margin-bottom:18px;
+      border-left:4px solid #114b91;
+      transition:0.3s;
+    }
+
+    .project:hover{
+      transform:translateY(-3px);
+    }
+
+    .project h3{
+      margin-bottom:10px;
+      color:#07172f;
+    }
+
+    .project p{
+      color:#4a5a73;
+      margin-bottom:12px;
+    }
+
+    .project a{
+      color:#114b91;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .project a:hover{
+      text-decoration:underline;
+    }
+
+    /* ORGANIZATION */
+
+    .organization{
+      background:#f8fbff;
+      padding:20px;
+      border-radius:14px;
+      border-left:4px solid #114b91;
+    }
+
+    .organization h3{
+      margin-bottom:10px;
+      color:#07172f;
+    }
+
+    .organization p{
+      color:#4a5a73;
+    }
+
+    /* FOOTER */
+
+    .footer{
+      text-align:center;
+      padding:20px;
+      color:#61708a;
+      font-size:0.9rem;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      .header{
+        text-align:center;
+        justify-content:center;
+      }
+
+      .header-text{
+        text-align:center;
+      }
+
+      .content{
+        padding:25px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- HEADER -->
+
+    <div class="header">
+
+      <div class="profile-img">
+
+        <img src="assets/profil.jpg.jpeg" alt="Foto Ika Cahya Oktavia">
+
+      </div>
+
+      <div class="header-text">
+
+        <h1>Ika Cahya Oktavia</h1>
+
+        <p>
+          Mahasiswa Teknologi Rekayasa Perangkat Lunak |
+          Web Developer Enthusiast
+        </p>
+
+        <div class="contact">
+
+          <p>📧 ikazzip3@email.com</p>
+
+          <p>📱 +62 831 2338 6700</p>
+
+          <p>📍 Boyolali, Jawa Tengah</p>
+
+          <p>
+            💻
+            <a
+              href="https://github.com/ikacahya247"
+              target="_blank"
+              style="color:white;"
+            >
+              github.com/ikacahya247
+            </a>
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="content">
+
+      <!-- PROFIL -->
+
+      <h2>Profil</h2>
+
+      <p class="profile-text">
+
+        Mahasiswa Teknologi Rekayasa Perangkat Lunak di
+        Universitas Duta Bangsa Surakarta yang memiliki minat
+        pada pengembangan website,
+        dan pengembangan aplikasi berbasis web maupun mobile.
+
+        Memiliki pengalaman mengerjakan beberapa project sistem informasi
+        dan aktif mempelajari teknologi baru untuk meningkatkan kemampuan
+        di bidang software development.
+
+      </p>
+
+      <!-- PENDIDIKAN -->
+
+      <h2>Pendidikan</h2>
+
+      <div class="edu-item">
+
+        <h3>Universitas Duta Bangsa Surakarta</h3>
+
+        <span>
+          Teknologi Rekayasa Perangkat Lunak |
+          2023 - Sekarang
+        </span>
+
+      </div>
+
+      <div class="edu-item">
+
+        <h3>SMAN 1 Sukomoro</h3>
+
+        <span>
+          2020 - 2023
+        </span>
+
+      </div>
+
+      <!-- SKILLS -->
+
+      <h2>Keahlian</h2>
+
+      <div class="skill-list">
+
+        <span>HTML</span>
+
+        <span>CSS</span>
+
+        <span>JavaScript</span>
+
+        <span>Python Flask</span>
+
+        <span>CodeIgniter 4</span>
+
+        <span>Flutter</span>
+
+        <span>MySQL</span>
+
+        <span>Git & GitHub</span>
+
+
+      </div>
+
+      <!-- PROJECT -->
+
+      <h2>Project</h2>
+
+      <!-- PROJECT 1 -->
+
+      <div class="project">
+
+        <h3>Website Desa Ngaren</h3>
+
+        <p>
+          Website informasi desa untuk menyampaikan profil desa,
+          kegiatan masyarakat, dan informasi publik secara digital
+          agar lebih mudah diakses oleh masyarakat.
+        </p>
+
+        <a
+          href="https://github.com/ikacahya247/Web_Desa_Ngaren.git"
+          target="_blank"
+        >
+          GitHub Project
+        </a>
+
+      </div>
+
+      <!-- PROJECT 2 -->
+
+      <div class="project">
+
+        <h3>Rebox Project</h3>
+
+        <p>
+          Sistem berbasis web untuk membantu pengelolaan data
+          dan proses manajemen secara lebih terstruktur
+          dengan tampilan modern dan responsif.
+        </p>
+
+        <a
+          href="https://github.com/elisandksr/reboxproject1.git"
+          target="_blank"
+        >
+          GitHub Project
+        </a>
+
+      </div>
+
+      <!-- PROJECT 3 -->
+
+      <div class="project">
+
+        <h3>Klinik Rawat Jalan</h3>
+
+        <p>
+          Sistem informasi klinik untuk pengelolaan data pasien,
+          jadwal pemeriksaan, dan administrasi layanan kesehatan
+          secara lebih efektif dan terorganisir.
+        </p>
+
+        <a href="#">
+          GitHub Project
+        </a>
+
+      </div>
+
+      <!-- PROJECT 4 -->
+
+      <div class="project">
+
+        <h3>Jasa Survey Kost</h3>
+
+        <p>
+          Platform berbasis web untuk membantu pengguna
+          mencari informasi kost dan melakukan survey lokasi
+          dengan lebih mudah dan efisien.
+        </p>
+
+        <a
+          href="https://github.com/elisandksr/project_jasa_survey_kost.git"
+          target="_blank"
+        >
+          GitHub Project
+        </a>
+
+      </div>
+
+      <!-- PROJECT 5 -->
+
+      <div class="project">
+
+        <h3>Sistem Manajemen Asrama</h3>
+
+        <p>
+          Sistem pengelolaan data penghuni, kamar,
+          pembayaran, dan administrasi asrama
+          berbasis digital dan terorganisir.
+        </p>
+
+        <a href="#">
+          GitHub Project
+        </a>
+
+      </div>
+
+      <!-- ORGANIZATION -->
+
+      <h2>Pengalaman Organisasi</h2>
+
+     <div class="organization">
+
+  <h3>
+    HMP-TRPL (Himpunan Mahasiswa Teknologi Rekayasa Perangkat Lunak)
+  </h3>
+
+  <p>
+    2023 - 2025
+  </p>
+
+  <p>
+    Aktif berpartisipasi dalam kegiatan organisasi mahasiswa,
+    bekerja sama dalam pelaksanaan program kerja,
+    koordinasi kegiatan, dan pengembangan komunikasi tim.
+  </p>
+
+</div>
+
+    <!-- FOOTER -->
+
+    <div class="footer">
+
+      © 2026 Ika Cahya Oktavia
+
+    </div>
+
+  </div>
+
+</body>
+</html>

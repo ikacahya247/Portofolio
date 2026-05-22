@@ -21,40 +21,30 @@
 
     body{
 
-      background:
-        linear-gradient(
-          180deg,
-          #eef4ff,
-          #dfe9ff
-        );
-
       font-family:
-        "Segoe UI",
         Arial,
         sans-serif;
 
-      color:#10213d;
+      background:#f5f5f5;
 
-      padding:40px 20px;
+      color:#111;
 
-      line-height:1.7;
+      padding:24px;
 
     }
 
-    .cv-container{
+    .cv{
 
-      max-width:1000px;
+      max-width:950px;
 
       margin:auto;
 
       background:white;
 
-      border-radius:28px;
-
-      overflow:hidden;
+      padding:32px;
 
       box-shadow:
-        0 20px 50px rgba(0,0,0,0.08);
+        0 2px 10px rgba(0,0,0,0.08);
 
     }
 
@@ -64,70 +54,29 @@
 
     .header{
 
-      background:
-        linear-gradient(
-          135deg,
-          #0f2d5c,
-          #1d4f91
-        );
-
-      color:white;
-
-      padding:45px;
-
       display:flex;
+
+      gap:24px;
 
       align-items:center;
 
-      gap:35px;
+      padding-bottom:20px;
 
-      flex-wrap:wrap;
+      border-bottom:1px solid #dcdcdc;
 
-      position:relative;
-
-      overflow:hidden;
-
-    }
-
-    .header::before{
-
-      content:"";
-
-      position:absolute;
-
-      width:300px;
-
-      height:300px;
-
-      background:
-        rgba(255,255,255,0.06);
-
-      border-radius:50%;
-
-      top:-120px;
-
-      right:-120px;
+      margin-bottom:24px;
 
     }
 
     .profile-photo{
 
-      width:140px;
+      width:110px;
 
-      height:140px;
-
-      border-radius:50%;
+      height:110px;
 
       object-fit:cover;
 
-      border:5px solid rgba(255,255,255,0.25);
-
-      box-shadow:
-        0 12px 30px rgba(0,0,0,0.25);
-
-      position:relative;
-
-      z-index:2;
+      border-radius:10px;
 
     }
 
@@ -135,125 +84,116 @@
 
       flex:1;
 
-      position:relative;
-
-      z-index:2;
-
     }
 
     .header-content h1{
 
-      font-size:2.8rem;
+      font-size:2rem;
 
-      margin-bottom:10px;
+      margin-bottom:6px;
 
     }
 
     .role{
 
-      color:#dbe7ff;
+      font-size:0.95rem;
 
-      font-size:1rem;
+      margin-bottom:12px;
 
-      margin-bottom:20px;
-
-      font-weight:500;
+      color:#444;
 
     }
 
-    .contact-info{
+    .contact{
 
       display:flex;
 
       flex-wrap:wrap;
 
-      gap:18px;
+      gap:10px;
 
-      margin-top:18px;
+      font-size:0.85rem;
 
-    }
-
-    .contact-info a{
-
-      text-decoration:none;
-
-      color:white;
-
-      font-size:0.95rem;
-
-      background:
-        rgba(255,255,255,0.08);
-
-      padding:10px 14px;
-
-      border-radius:12px;
-
-      transition:0.3s ease;
-
-    }
-
-    .contact-info a:hover{
-
-      background:
-        rgba(255,255,255,0.16);
+      color:#555;
 
     }
 
     /* =========================
-       CONTENT
+       MAIN
     ========================= */
 
-    .content{
+    .main{
 
-      padding:45px;
+      display:grid;
+
+      grid-template-columns:
+        35% 65%;
+
+      gap:28px;
 
     }
+
+    /* =========================
+       SECTION
+    ========================= */
 
     section{
 
-      margin-bottom:45px;
+      margin-bottom:26px;
 
     }
 
-    h2{
+    .section-title{
 
-      color:#114b91;
+      font-size:0.95rem;
 
-      margin-bottom:22px;
+      font-weight:bold;
 
-      font-size:1rem;
+      letter-spacing:1px;
+
+      margin-bottom:12px;
+
+      padding-bottom:6px;
+
+      border-bottom:1px solid #dcdcdc;
 
       text-transform:uppercase;
-
-      letter-spacing:0.08em;
-
-      border-bottom:2px solid #dce7f8;
-
-      padding-bottom:10px;
 
     }
 
     p{
 
-      color:#4d607e;
+      font-size:0.9rem;
 
-      line-height:1.9;
+      line-height:1.7;
+
+      color:#333;
 
     }
 
     /* =========================
-       PROFILE
+       SKILL
     ========================= */
 
-    .profile-box{
+    .skill-list{
 
-      background:#f8fbff;
+      display:flex;
 
-      padding:28px;
+      flex-wrap:wrap;
 
-      border-radius:22px;
+      gap:8px;
 
-      border:1px solid #dce7f7;
+    }
+
+    .skill-list span{
+
+      border:1px solid #cfcfcf;
+
+      padding:6px 10px;
+
+      font-size:0.78rem;
+
+      border-radius:999px;
 
     }
 
@@ -263,99 +203,25 @@
 
     .education-item{
 
-      background:#f8fbff;
-
-      padding:22px;
-
-      border-radius:20px;
-
       margin-bottom:18px;
-
-      border:1px solid #dce7f7;
 
     }
 
     .education-item h3{
 
-      color:#10213d;
+      font-size:1rem;
 
-      margin-bottom:8px;
+      margin-bottom:4px;
 
     }
 
     .education-year{
 
-      color:#6f83a3;
-
-      font-size:0.92rem;
-
-    }
-
-    /* =========================
-       SKILLS
-    ========================= */
-
-    .skills-grid{
-
-      display:grid;
-
-      grid-template-columns:
-        repeat(auto-fit,minmax(230px,1fr));
-
-      gap:22px;
-
-    }
-
-    .skill-card{
-
-      background:#f8fbff;
-
-      border:1px solid #dce7f7;
-
-      padding:24px;
-
-      border-radius:22px;
-
-    }
-
-    .skill-card h3{
-
-      margin-bottom:15px;
-
-      color:#10213d;
-
-      font-size:1rem;
-
-    }
-
-    .skill-tags{
-
-      display:flex;
-
-      flex-wrap:wrap;
-
-      gap:10px;
-
-    }
-
-    .skill-tags span{
-
-      background:
-        linear-gradient(
-          135deg,
-          #2f6bff,
-          #5ea8ff
-        );
-
-      color:white;
-
-      padding:8px 14px;
-
-      border-radius:999px;
-
       font-size:0.82rem;
 
-      font-weight:600;
+      color:#666;
+
+      margin-top:4px;
 
     }
 
@@ -363,122 +229,33 @@
        PROJECT
     ========================= */
 
-    .project-grid{
+    .project{
 
-      display:grid;
-
-      gap:22px;
+      margin-bottom:18px;
 
     }
 
-    .project-card{
+    .project h3{
 
-      background:#f8fbff;
+      font-size:1rem;
 
-      border:1px solid #dce7f7;
-
-      border-radius:22px;
-
-      padding:26px;
-
-      transition:0.3s ease;
+      margin-bottom:6px;
 
     }
 
-    .project-card:hover{
+    .project p{
 
-      transform:translateY(-5px);
-
-      box-shadow:
-        0 15px 35px rgba(0,0,0,0.08);
+      font-size:0.88rem;
 
     }
 
     .project-tech{
 
-      display:flex;
-
-      flex-wrap:wrap;
-
-      gap:10px;
-
-      margin-bottom:16px;
-
-    }
-
-    .project-tech span{
-
-      background:
-        linear-gradient(
-          135deg,
-          #2f6bff,
-          #5ea8ff
-        );
-
-      color:white;
-
-      padding:8px 14px;
-
-      border-radius:999px;
-
       font-size:0.78rem;
 
-      font-weight:700;
+      color:#666;
 
-    }
-
-    .project-card h3{
-
-      color:#10213d;
-
-      margin-bottom:14px;
-
-      font-size:1.3rem;
-
-    }
-
-    .project-card p{
-
-      color:#4d607e;
-
-      line-height:1.9;
-
-      margin-bottom:20px;
-
-    }
-
-    .project-link{
-
-      display:inline-flex;
-
-      align-items:center;
-
-      justify-content:center;
-
-      text-decoration:none;
-
-      color:white;
-
-      background:
-        linear-gradient(
-          135deg,
-          #2f6bff,
-          #5ea8ff
-        );
-
-      padding:12px 18px;
-
-      border-radius:14px;
-
-      font-weight:600;
-
-      transition:0.3s ease;
-
-    }
-
-    .project-link:hover{
-
-      transform:translateY(-3px);
+      margin-bottom:6px;
 
     }
 
@@ -486,81 +263,41 @@
        ORGANIZATION
     ========================= */
 
-    .org-card{
+    .org-box h3{
 
-      background:#f8fbff;
+      font-size:1rem;
 
-      border:1px solid #dce7f7;
-
-      padding:26px;
-
-      border-radius:22px;
-
-    }
-
-    .org-card h3{
-
-      color:#10213d;
-
-      margin-bottom:8px;
+      margin-bottom:4px;
 
     }
 
     .org-year{
 
-      color:#6f83a3;
+      font-size:0.82rem;
 
-      margin-bottom:14px;
+      color:#666;
 
-      font-size:0.9rem;
-
-    }
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    .footer{
-
-      text-align:center;
-
-      padding:24px;
-
-      color:#6f83a3;
-
-      font-size:0.9rem;
+      margin-bottom:8px;
 
     }
 
     /* =========================
-       RESPONSIVE
+       PRINT
     ========================= */
 
-    @media(max-width:768px){
+    @media print{
 
-      .header{
+      body{
 
-        justify-content:center;
+        background:white;
 
-        text-align:center;
-
-      }
-
-      .contact-info{
-
-        justify-content:center;
+        padding:0;
 
       }
 
-      .content{
+      .cv{
 
-        padding:28px;
-
-      }
-
-      .header-content h1{
-
-        font-size:2.2rem;
+        box-shadow:none;
 
       }
 
@@ -572,11 +309,11 @@
 
 <body>
 
-  <div class="cv-container">
+  <div class="cv">
 
     <!-- HEADER -->
 
-    <header class="header">
+    <div class="header">
 
       <img
         src="assets/profil.jpg.jpeg"
@@ -590,253 +327,205 @@
           Ika Cahya Oktavia
         </h1>
 
-        <p class="role">
-          Mahasiswa Teknologi Rekayasa Perangkat Lunak |
+        <div class="role">
           Software Engineering & Web Developer Enthusiast
-        </p>
+        </div>
 
-       <div class="contact-info">
+        <div class="contact">
 
-  <a href="mailto:ikazzip3@email.com">
-    📧 Email
-  </a>
+          <span>
+            Boyolali, Jawa Tengah
+          </span>
 
-  <a
-    href="https://wa.me/6283123386700"
-    target="_blank"
-  >
-    💬 WhatsApp
-  </a>
+          <span>
+            083123386700
+          </span>
 
-  <a
-    href="https://github.com/ikacahya247"
-    target="_blank"
-  >
-    💻 GitHub
-  </a>
+          <span>
+            ikazzip3@email.com
+          </span>
 
-    <span>
-    📍 Boyolali, Jawa Tengah
-  </span>
+          <span>
+            github.com/ikacahya247
+          </span>
 
-
-</div>
+        </div>
 
       </div>
 
-    </header>
+    </div>
 
-    <!-- CONTENT -->
+    <!-- MAIN -->
 
-    <div class="content">
+    <div class="main">
 
-      <!-- PROFIL -->
+      <!-- LEFT -->
 
-      <section>
+      <div class="left">
 
-        <h2>
-          Profil
-        </h2>
+        <!-- PROFIL -->
 
-        <div class="profile-box">
+        <section>
+
+          <div class="section-title">
+            Profil
+          </div>
 
           <p>
+
             Mahasiswa Teknologi Rekayasa Perangkat Lunak
-            di Universitas Duta Bangsa Surakarta
             yang memiliki minat pada pengembangan website,
-            mobile app,
+            mobile application,
             dan software engineering.
-
-            Memiliki pengalaman mengembangkan beberapa project
-            berbasis Flutter,
+            Terbiasa mengembangkan project berbasis
+            Flutter,
             PHP,
-            dan CodeIgniter 4
-            serta aktif dalam organisasi mahasiswa.
+            CodeIgniter 4,
+            dan JavaScript.
 
-            Saya senang mempelajari teknologi baru,
-            bekerja secara kolaboratif,
-            dan membangun sistem yang modern,
-            responsif,
-            serta mudah digunakan.
           </p>
 
-        </div>
+        </section>
 
-      </section>
+        <!-- SKILL -->
 
-      <!-- PENDIDIKAN -->
+        <section>
 
-      <section>
+          <div class="section-title">
+            Keahlian
+          </div>
 
-        <h2>
-          Pendidikan
-        </h2>
+          <div class="skill-list">
 
-        <div class="education-item">
+            <span>C++</span>
+            <span>Python</span>
+            <span>PHP</span>
+            <span>JavaScript</span>
+            <span>Golang</span>
 
-          <h3>
-            Universitas Duta Bangsa Surakarta
-          </h3>
+            <span>Flutter</span>
+            <span>Flask</span>
+            <span>CI4</span>
+            <span>Supabase</span>
 
-          <p>
-            Teknologi Rekayasa Perangkat Lunak
-          </p>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>MySQL</span>
 
-          <p class="education-year">
-            2023 - Sekarang
-          </p>
-
-        </div>
-
-        <div class="education-item">
-
-          <h3>
-            SMAN 1 Sukomoro
-          </h3>
-
-          <p>
-            Sekolah Menengah Atas
-          </p>
-
-          <p class="education-year">
-            2020 - 2023
-          </p>
-
-        </div>
-
-      </section>
-
-      <!-- KEAHLIAN -->
-
-      <section>
-
-        <h2>
-          Keahlian
-        </h2>
-
-        <div class="skills-grid">
-
-          <div class="skill-card">
-
-            <h3>
-              Programming Language
-            </h3>
-
-            <div class="skill-tags">
-
-              <span>C++</span>
-              <span>Python</span>
-              <span>PHP</span>
-              <span>JavaScript</span>
-              <span>Golang</span>
-
-            </div>
+            <span>GitHub</span>
+            <span>VS Code</span>
 
           </div>
 
-          <div class="skill-card">
+        </section>
+
+        <!-- ORGANISASI -->
+
+        <section>
+
+          <div class="section-title">
+            Organisasi
+          </div>
+
+          <div class="org-box">
 
             <h3>
-              Frontend Development
+              HMP-TRPL
             </h3>
 
-            <div class="skill-tags">
-
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Dark UI</span>
-
+            <div class="org-year">
+              2023 - 2025
             </div>
+
+            <p>
+
+              Aktif dalam kegiatan organisasi mahasiswa,
+              kerja sama tim,
+              dan pelaksanaan program kerja.
+
+            </p>
 
           </div>
 
-          <div class="skill-card">
+        </section>
 
-            <h3>
-              Framework & Tools
-            </h3>
+      </div>
 
-            <div class="skill-tags">
+      <!-- RIGHT -->
 
-              <span>Flutter</span>
-              <span>Flask</span>
-              <span>CodeIgniter 4</span>
-              <span>Supabase</span>
+      <div class="right">
 
-            </div>
+        <!-- PENDIDIKAN -->
 
+        <section>
+
+          <div class="section-title">
+            Pendidikan
           </div>
 
-          <div class="skill-card">
+          <div class="education-item">
 
             <h3>
-              Database & Tools
-            </h3>
-
-            <div class="skill-tags">
-
-              <span>MySQL</span>
-              <span>GitHub</span>
-              <span>VS Code</span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
-      <!-- PROJECT -->
-
-      <section>
-
-        <h2>
-          Project
-        </h2>
-
-        <div class="project-grid">
-
-          <!-- PROJECT 1 -->
-          <div class="project-card">
-
-            <div class="project-tech">
-
-              <span>Flutter</span>
-              <span>Supabase</span>
-              <span>Dark Mode</span>
-
-            </div>
-
-            <h3>
-              ReBox - Aplikasi Donasi Barang Bekas
+              Universitas Duta Bangsa Surakarta
             </h3>
 
             <p>
-              Aplikasi mobile berbasis Flutter
-              untuk membantu pengguna melakukan donasi
-              barang bekas dengan tampilan modern
-              dan integrasi database menggunakan Supabase.
+              D4 Teknologi Rekayasa Perangkat Lunak
             </p>
 
-            <a
-              href="https://github.com/elisandksr/reboxproject1.git"
-              target="_blank"
-              class="project-link"
-            >
-              GitHub Project
-            </a>
+            <div class="education-year">
+              2023 - Sekarang
+            </div>
 
           </div>
 
-          <!-- PROJECT 2 -->
-          <div class="project-card">
+          <div class="education-item">
+
+            <h3>
+              SMAN 1 Sukomoro
+            </h3>
+
+            <p>
+              Jurusan IPA
+            </p>
+
+            <div class="education-year">
+              2020 - 2023
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- PROJECT -->
+
+        <section>
+
+          <div class="section-title">
+            Project
+          </div>
+
+          <div class="project">
 
             <div class="project-tech">
+              Flutter • Supabase
+            </div>
 
-              <span>PHP</span>
-              <span>MySQL</span>
+            <h3>
+              ReBox
+            </h3>
 
+            <p>
+              Aplikasi donasi barang bekas berbasis Flutter
+              dengan integrasi database Supabase.
+            </p>
+
+          </div>
+
+          <div class="project">
+
+            <div class="project-tech">
+              PHP • MySQL
             </div>
 
             <h3>
@@ -844,31 +533,16 @@
             </h3>
 
             <p>
-              Sistem berbasis web untuk membantu pengguna
-              mencari informasi kost
-              dan melakukan survey lokasi
-              secara lebih mudah dan efisien.
+              Website survey kost berbasis PHP dan MySQL
+              untuk membantu pengguna mencari informasi kost.
             </p>
-
-            <a
-              href="https://github.com/elisandksr/project_jasa_survey_kost.git"
-              target="_blank"
-              class="project-link"
-            >
-              GitHub Project
-            </a>
 
           </div>
 
-          <!-- PROJECT 3 -->
-          <div class="project-card">
+          <div class="project">
 
             <div class="project-tech">
-
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-
+              HTML • CSS • JavaScript
             </div>
 
             <h3>
@@ -876,30 +550,16 @@
             </h3>
 
             <p>
-              Website informasi desa untuk menyampaikan
-              profil desa,
-              kegiatan masyarakat,
-              dan informasi publik secara digital.
+              Website informasi desa
+              untuk publikasi profil dan kegiatan masyarakat.
             </p>
-
-            <a
-              href="https://github.com/ikacahya247/Web_Desa_Ngaren.git"
-              target="_blank"
-              class="project-link"
-            >
-              GitHub Project
-            </a>
 
           </div>
 
-          <!-- PROJECT 4 -->
-          <div class="project-card">
+          <div class="project">
 
             <div class="project-tech">
-
-              <span>PHP</span>
-              <span>CodeIgniter 4</span>
-
+              PHP • CodeIgniter 4
             </div>
 
             <h3>
@@ -907,62 +567,15 @@
             </h3>
 
             <p>
-              Sistem informasi klinik
-              untuk pengelolaan data pasien,
-              jadwal pemeriksaan,
-              dan administrasi layanan kesehatan.
+              Sistem informasi klinik berbasis web
+              untuk pengelolaan pasien dan pemeriksaan.
             </p>
-
-            <a
-              href="#"
-              class="project-link"
-            >
-              GitHub Project
-            </a>
 
           </div>
 
-        </div>
+        </section>
 
-      </section>
-
-      <!-- ORGANISASI -->
-
-      <section>
-
-        <h2>
-          Pengalaman Organisasi
-        </h2>
-
-        <div class="org-card">
-
-          <h3>
-            HMP-TRPL
-            (Himpunan Mahasiswa Teknologi Rekayasa Perangkat Lunak)
-          </h3>
-
-          <p class="org-year">
-            2023 - 2025
-          </p>
-
-          <p>
-            Aktif berpartisipasi dalam kegiatan organisasi mahasiswa,
-            bekerja sama dalam pelaksanaan program kerja,
-            koordinasi kegiatan,
-            dan pengembangan komunikasi tim.
-          </p>
-
-        </div>
-
-      </section>
-
-    </div>
-
-    <!-- FOOTER -->
-
-    <div class="footer">
-
-      © 2026 Ika Cahya Oktavia
+      </div>
 
     </div>
 
